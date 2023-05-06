@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nguyễn Hùng Web Design | Trang chủ</title>
+		<style>
+			body {
+				padding: 0;
+			}
+
+			.heading {
+				background-color:#242525;
+			}
+
+			.heading__list {
+				list-style: none;
+				padding-left: 0;
+			}
+
+			.heading__list-item {
+				margin: 0 12px;
+				cursor: pointer;
+			}
+
+			.heading__item-link {
+				color: #e5e5ff;
+				font-size: 18px;
+			}
+
+			.heading-h2 {
+				margin: 0;
+				color: #e5e5ff;
+				padding: 12px;
+			}
+
+			.container-content {
+				display: none;
+			}
+
+			.active {
+				display: block;
+			}
+
+			.body__container-introduce {
+				display:block
+			}
+
+			p {
+				font-size: 18px;
+			}
+
+			.footer {
+				height: 84px;
+				background-color: yellow;
+				display: flex;
+			}
+
+			.footer__parag {
+				margin: auto;
+			}
+
+			.enable {
+				color: yellow
+			}
+		</style>
+	</head>
+	<body>
+		<div class="heading">
+            <ul class="heading__list">
+                <li class="heading__list-item">
+                    <a class="heading__item-link enable">Trang chủ</a>
+                </li>
+                <li class="heading__list-item">
+                    <a class="heading__item-link">Thông tin</a>
+                </li>
+                <li class="heading__list-item">
+                    <a class="heading__item-link">Dịch vụ</a>
+                </li>
+            </ul>
+			<h1 class="heading-h2">Nguyễn Hùng Web Design</h1>
+		</div>
+
+        <div class="body__container-introduce">
+            <h2>Thiết kế website chuyên nghiệp</h2>
+            <p>
+                Bạn đang cần công ty thiết kế website chuyên nghiệp?
+                Hãy liên hệ ngay với Websitetot.vn
+            </p>
+        </div>
+
+		<h2>Đăng ký để nhận thông báo mới từ chúng tôi</h2>
+		<input tye="text" placeholder="Nhập Email..." />
+		<input type="submit" value="Đăng ký" />
+		<br/>
+		
+		<div class="container-content active">
+			<h3>1. Ngôn ngữ HTML5</h3>
+			<p>
+				HTML5 là một ngôn ngữ cấu trúc và trình bày nội dung
+				cho World Wide Web và sẽ là công nghệ cốt lỗi của Internet
+				trong tương lai không xa, được đề xuất đầu tiên bởi Opera Software.
+			</p>
+            <img width="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/170px-HTML5_logo_and_wordmark.svg.png" alt="">
+			
+			<h3>2. Ngôn ngữ CSS 3</h3>
+			<p>
+				CSS3 là viết tắt của Cascading Style Sheet level 3, là phiên bản nâng
+				cao của CSS. Được sử dụng để cấu trúc, tạo kiểu và định dạng các trang
+				web. Một số tính năng mới đã được thêm và CSS3 và được hỗ trợ bởi tất
+				cả các trình duyệt web hiện đại.
+			</p>
+            <img width="200px" src="https://www.hiepsiit.com/public/uploads/images/css/logo.png"/>
+
+			<h3>3. Thiết kế đồ họa</h3>
+			<p>
+				Thiết kế đồ hoạt là cụm từ để chỉ một chuyên ngành thuộc về mỹ thuật.
+				Trong đó danh từ "đồ họa" để chỉ những bản vẽ được hiển thị trên một mặt
+				phẳng, và động từ thiết kế bao hàm ý nghĩa kiến thiết, sáng tạo.
+			</p>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK3L6VoslxfnEbEr-B-dUU_Gqt1IL1DmUUtw&usqp=CAU"/>
+		</div>
+
+		<div class="container-content">
+			<h3>Về chúng tôi</h3>
+			<p>
+				Chúng tôi luôn lắng nghe nhu cầu, tạo ra những ý tưởng đột phá mới giúp
+				hơn 2.300 khách hàng thành công.
+			</p>
+			<p>
+				Về sáng tạo, chúng tôi có hơn 10 năm kinh nghiệm xây dựng chiến lược web cho công ty, 
+				thương mại điện tử và tập đoàn. Về công nghệ, chúng tôi phát triển những trang web vượt trội,
+				giải pháp e-commercical, quảng cáo web, dịc vụ web...
+			</p>
+
+			<h3>Dịch vụ chúng tôi</h3>
+			<p>Chúng tôi cam kết dịch vụ tin cậy, chuyên nghiệp, phải chăng.</p>
+		</div>
+
+		<div class="container-content">
+			<h3>Các dịch vụ</h3>
+
+			<ul>
+				<li>
+					<h3>Thiết kế web</h3>
+					<p>Tạo website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+					<p>Giá: $1,000 - $3,000</p>
+				</li>
+				<li>
+					<h3>Bảo trì Website</h3>
+					<p>Bảo trì Website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+					<p>Giá: $250 mỗi tháng</p>
+				</li>
+				<li>
+					<h3>Web Hosting</h3>
+					<p>Cung cấp hosting chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+					<p>Giá: $25 mỗi tháng</p>
+				</li>
+			</ul>
+
+			<form action="">
+				<h3>Liên hệ</h3>
+
+				<div>
+					<label>Tên</label>
+					<br/>
+					<input type="text" placeholder="Tên" />
+				</div>
+
+				<div>
+					<label>Email</label>
+					<br/><input type="text" placeholder="Email" />
+				</div>
+
+				<div>
+					<label>Nội dung</label>
+					<br/>
+					<textarea placeholder="Nội dung"></textarea>
+				</div>
+				<input type="submit" valur="Gửi" />
+			</form>
+		</div>
+
+		<div class="footer" >
+			<p class="footer__parag">Nguyen Hung Web Design, Copyright &copy; 2023</p>
+		</div>
+
+		<script>
+			const trangChu = document.querySelectorAll('.heading__item-link')
+			let content = document.querySelectorAll('.container-content')
+
+			for (let i = 0; i < trangChu.length; i++) {
+
+				trangChu[i].onclick = function(e) {
+					const active = document.querySelector('.active')
+					const enable = document.querySelector('.enable')
+
+					active.classList.remove('active')
+					enable.classList.remove('enable')
+
+					content[i].classList.add('active')
+					trangChu[i].classList.add('enable')
+
+					const introduceElement = document.querySelector('.body__container-introduce')
+					if(e.target.innerText === 'Trang chủ') {
+						document.title = 'Nguyễn Hùng Web Design | Trang chủ'
+
+						introduceElement.style.display = 'block'
+					} else {
+						introduceElement.style.display = 'none'
+					}
+
+					if(e.target.innerText === 'Thông tin') {
+						document.title = 'Nguyễn Hùng Web Design | Thông tin'
+					}
+
+					if(e.target.innerText === 'Dịch vụ') {
+						document.title = 'Nguyễn Hùng Web Design | Dịch vụ'
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
