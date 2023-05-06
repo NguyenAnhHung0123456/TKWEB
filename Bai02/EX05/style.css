@@ -1,1 +1,69 @@
+body {
+    padding: 0;
+    margin: 0;
+}
 
+.heading {
+    background-color:#242525;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    order: 2;
+    align-items: center;
+}
+
+.heading__list-item {
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.heading__item-link {
+    color: #e5e5ff;
+    font-size: 18px;
+}
+
+.heading-h2 {
+    margin: 0;
+    color: #e5e5ff;
+    padding: 12px 0;
+    order: 1;
+}
+
+.body-email {
+    display: flex;
+}
+
+.body-email input[type="text"] {
+    flex: 1;
+}
+
+.container-content {
+    display: none;
+}
+
+p {
+    font-size: 18px;
+}
+
+.active {
+    display: block;
+}
+
+.footer {
+    height: 84px;
+    background-color: yellow;
+    display: flex;
+}
+
+.footer__parag {
+    margin: auto;
+}
+
+.enable {
+    color: yellow
+}
