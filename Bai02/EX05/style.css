@@ -36,6 +36,10 @@ body {
     line-height: 96px;
 }
 
+.body-container {
+    margin: 0 64px;
+}
+
 .name-website {
     color: #d36969;
 }
@@ -46,6 +50,10 @@ body {
 
 .container-content {
     display: none;
+}
+
+.body__container-introduce {
+    display:block
 }
 
 p {
