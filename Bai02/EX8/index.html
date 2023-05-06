@@ -7,6 +7,260 @@
         <title>Document</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .heading {
+                background-color:#242525;
+                border-bottom: 4px solid red;
+            }
+
+            .heading-container-list {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .heading__list {
+                list-style: none;
+                display: flex;
+                padding-left: 0;
+            }
+
+            .heading__list-item {
+                margin: 0 12px;
+            }
+
+            .heading__list-item:hover {
+                cursor: pointer;
+                opacity: 0.5;
+            }
+
+            .heading__item-link {
+                color: #ccc;
+                font-size: 18px;
+            }
+
+            .heading__list-account {
+                display: flex;
+                list-style: none;
+                padding-left: 0;
+            } 
+
+            .heading__item-account {
+                padding: 0 12px
+            }
+
+            .heading__item-account:hover {
+                opacity: 0.8;
+            }
+
+            .heading__item-account-link {
+                font-size: 18px;
+                text-decoration: none;
+                color: #ff0202;
+            }
+
+            .heading-container_h2 {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 12px;
+                align-items: center;
+            }
+
+            .heading-h2 {
+                margin: 0;
+                color: #ccc;
+                padding: 12px 0;
+                display: inline-block
+            }
+
+            .heading-search {
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                height: 32px;
+                border-radius: 2px;
+                overflow: hidden;
+                width: 28%;
+            }
+
+            .heading-search-input {
+                height: 28px;
+                padding: 0;
+                border: 0;
+                padding: 0 8px;
+                width: 100%;
+            }
+
+            .heading-search-btn {
+                background-color: red;
+                height: 28px;
+                width: 28px;
+                display: flex;
+                margin: 2px;
+                cursor: pointer;
+            }
+
+            .heading-search-btn-icon {
+                margin: auto;
+            }
+
+            .body__container-introduce {
+                background: url(https://png.pngtree.com/background/20220730/original/pngtree-summer-sea-beach-top-coast-picture-image_1882194.jpg) no-repeat top center / cover;
+                height: 70vh;
+                display: block;
+                border-bottom: 4px solid red;
+            }
+
+            .body__container-introduce-content {
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .body-introduce__title {
+                margin: 0;
+                color: #ccc;
+                text-align: center;
+            }
+            .body-introduce__psg {
+                color: #ccc;
+                text-align: center;
+            }
+
+            .body-container-input {
+                display: flex;
+                background-color: #242525;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 12px;
+                height: 68px;
+            }
+
+            .body-input-psg {
+                color: #ccc;
+            }
+
+            .body-input-container-email {
+                height: 50%;
+                text-align: end;
+                width: 34%;
+                display: flex;
+            }
+            .body-input-email {
+                height: 100%;
+                padding: 0 8px;
+                border: 0;
+                width: 100%;
+            }
+
+            .body-input-btn {
+                height: 100%;
+                background: red;
+                color: #ccc;
+                border: 0;
+                font-weight: 700;
+                cursor: pointer;
+                padding: 0 6px
+            }
+
+            .body-container-content {
+                margin: 0 64px 24px;
+            }
+
+            .container-content {
+                display: none;
+            }
+
+            .content-language__list {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                justify-content: space-between;
+                padding-left: 0;
+            }
+
+            .content-language__item {
+                flex-basis: 25%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .content-language__heading {
+                margin-bottom: 0;
+                order: 1;
+            }
+
+            .content-language__psg {
+                order: 3;
+            }
+
+            .content-language__img {
+                order: 2;
+            }
+
+            .active {
+                display: block;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .form-service {
+                background-color: #242525;
+                color: #ccc;
+                padding: 6px 12px;
+                margin-bottom: 24px;
+            }
+
+            .form-service-heading {
+                margin: 0 0 12px 0;
+            }
+
+            .form-service-lable {
+                font-size: 18px;
+            }
+            .form-service-input {
+                height: 24px;
+                padding: 0 6px;
+                border: 0;
+                margin-bottom: 12px;
+            }
+
+            .form-service-content {
+                width: 169px;
+                padding: 0 6px;
+                border: 0;
+                margin-bottom: 12px;
+            }
+
+            .form-service-submit {
+                background-color: red;
+                height: 24px;
+                color: #ccc;
+            }
+
+            .footer {
+                height: 84px;
+                background-color: #242525;
+                display: flex;
+                color: #ccc;
+            }
+            .footer__parag {
+                margin: auto;
+            }
+
+            .enable {
+                color: yellow
+            }
+        </style>
     </head>
     <body>
         <div class="heading">
@@ -167,7 +421,39 @@
         </div>
 
         <script src="./main.js">
+            const trangChu = document.querySelectorAll('.heading__item-link')
+            let content = document.querySelectorAll('.container-content')
 
+            for (let i = 0; i < trangChu.length; i++) {
+
+                trangChu[i].onclick = function(e) {
+                    const active = document.querySelector('.active')
+                    const enable = document.querySelector('.enable')
+
+                    active.classList.remove('active')
+                    enable.classList.remove('enable')
+
+                    content[i].classList.add('active')
+                    trangChu[i].classList.add('enable')
+
+                    const introduceElement = document.querySelector('.body__container-introduce')
+                    if(e.target.innerText === 'Trang chủ') {
+                        document.title = 'Nguyễn Hùng Web Design | Trang chủ'
+
+                        introduceElement.style.display = 'block'
+                    } else {
+                        introduceElement.style.display = 'none'
+                    }
+
+                    if(e.target.innerText === 'Thông tin') {
+                        document.title = 'Nguyễn Hùng Web Design | Thông tin'
+                    }
+
+                    if(e.target.innerText === 'Dịch vụ') {
+                        document.title = 'Nguyễn Hùng Web Design | Dịch vụ'
+                    }
+                }
+            }
         </script>
     </body>
 </html>
