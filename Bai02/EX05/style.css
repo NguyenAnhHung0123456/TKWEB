@@ -6,6 +6,8 @@ body {
 .heading {
     background-color:#242525;
     display: flex;
+    height: 96px;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -14,7 +16,6 @@ body {
     padding-left: 0;
     display: flex;
     order: 2;
-    align-items: center;
 }
 
 .heading__list-item {
