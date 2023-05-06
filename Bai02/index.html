@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="heading">
+            <div class="heading-container-list">
+                <ul class="heading__list">
+                    <li class="heading__list-item">
+                        <a class="heading__item-link enable">Trang chủ</a>
+                    </li>
+                    <li class="heading__list-item">
+                        <a class="heading__item-link">Thông tin</a>
+                    </li>
+                    <li class="heading__list-item">
+                        <a class="heading__item-link">Dịch vụ</a>
+                    </li>
+                </ul>
+                <ul class="heading__list-account">
+                    <li class="heading__item-account">
+                        <a class="heading__item-account-link" href="">Đăng ký</a>
+                    </li>
+                    <li class="heading__item-account">
+                        <a class="heading__item-account-link" href="">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="heading-container_h2">
+                <h1 class="heading-h2">Nguyễn Hùng Web Design</h1>
+
+                <div class="heading-search">
+                    <input type="text" class="heading-search-input" placeholder="Search">
+                    <div class="heading-search-btn">
+                        <i class="heading-search-btn-icon fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body__container-introduce">
+            <div class="body__container-introduce-content">
+                <h2 class="body-introduce__title">Thiết kế website chuyên nghiệp</h2>
+                <p class="body-introduce__psg">
+                    Bạn đang cần công ty thiết kế website chuyên nghiệp?
+                    Hãy liên hệ ngay với Websitetot.vn
+                </p>
+            </div>
+        </div>
+
+        <div class="body-container-input">
+            <h2 class="body-input-psg">Đăng ký để nhận thông báo mới từ chúng tôi</h2>
+            <div class="body-input-container-email">
+                <input class="body-input-email" tye="text" placeholder="Nhập Email..." />
+                <input class="body-input-btn" type="submit" value="Đăng ký" />
+            </div>
+        </div>
+        
+        <div class="body-container-content">
+
+            <!-- Trang chủ -->
+            <div class="container-content active">
+                <h3>1. Ngôn ngữ HTML5</h3>
+                <p>
+                    HTML5 là một ngôn ngữ cấu trúc và trình bày nội dung
+                    cho World Wide Web và sẽ là công nghệ cốt lỗi của Internet
+                    trong tương lai không xa, được đề xuất đầu tiên bởi Opera Software.
+                </p>
+                <img src="data:image/png;base64,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"/>
+                
+                <h3>2. Ngôn ngữ CSS 3</h3>
+                <p>
+                    CSS3 là viết tắt của Cascading Style Sheet level 3, là phiên bản nâng
+                    cao của CSS. Được sử dụng để cấu trúc, tạo kiểu và định dạng các trang
+                    web. Một số tính năng mới đã được thêm và CSS3 và được hỗ trợ bởi tất
+                    cả các trình duyệt web hiện đại.
+                </p>
+                <img src="data:image/png;base64,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"/>
+
+                <h3>3. Thiết kế đồ họa</h3>
+                <p>
+                    Thiết kế đồ hoạt là cụm từ để chỉ một chuyên ngành thuộc về mỹ thuật.
+                    Trong đó danh từ "đồ họa" để chỉ những bản vẽ được hiển thị trên một mặt
+                    phẳng, và động từ thiết kế bao hàm ý nghĩa kiến thiết, sáng tạo.
+                </p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK3L6VoslxfnEbEr-B-dUU_Gqt1IL1DmUUtw&usqp=CAU"/>
+            </div>
+
+            <!-- Thông tin -->
+            <div class="container-content">
+                <h3>Về chúng tôi</h3>
+            <p>
+                Chúng tôi luôn lắng nghe nhu cầu, tạo ra những ý tưởng đột phá mới giúp
+                hơn 2.300 khách hàng thành công.
+            </p>
+            <p>
+                Về sáng tạo, chúng tôi có hơn 10 năm kinh nghiệm xây dựng chiến lược web cho công ty, 
+                thương mại điện tử và tập đoàn. Về công nghệ, chúng tôi phát triển những trang web vượt trội,
+                giải pháp e-commercical, quảng cáo web, dịc vụ web...
+            </p>
+
+            <h3>Dịch vụ chúng tôi</h3>
+            <p>Chúng tôi cam kết dịch vụ tin cậy, chuyên nghiệp, phải chăng.</p>
+            </div>
+
+            <!-- Dịch vụ -->
+            <div class="container-content">
+                <h3>Các dịch vụ</h3>
+
+                <ul>
+                    <li>
+                        <h3>Thiết kế web</h3>
+                        <p>Tạo website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                        <p>Giá: $1,000 - $3,000</p>
+                    </li>
+                    <li>
+                        <h3>Bảo trì Website</h3>
+                        <p>Bảo trì Website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                        <p>Giá: $250 mỗi tháng</p>
+                    </li>
+                    <li>
+                        <h3>Web Hosting</h3>
+                        <p>Cung cấp hosting chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                        <p>Giá: $25 mỗi tháng</p>
+                    </li>
+                </ul>
+
+                <form class="form-service" action="">
+                    <h3 class="form-service-heading">Liên hệ</h3>
+
+                    <div>
+                        <label class="form-service-lable">Tên</label>
+                        <br/>
+                        <input  class="form-service-input" type="text" placeholder="Tên" />
+                    </div>
+
+                    <div>
+                        <label class="form-service-lable">Email</label>
+                        <br/>
+                        <input  class="form-service-input" type="text" placeholder="Email" />
+                    </div>
+
+                    <div>
+                        <label class="form-service-lable">Nội dung</label>
+                        <br/>
+                        <textarea class="form-service-content" placeholder="Nội dung"></textarea>
+                    </div>
+                    <input class="form-service-submit" type="submit" valur="Gửi" />
+                </form>
+            </div>
+        </div>
+
+        <div class="footer" >
+            <p class="footer__parag">Nguyen Hung Web Design, Copyright &copy; 2023</p>
+        </div>
+
+        <script src="./main.js">
+
+        </script>
+    </body>
+</html>
