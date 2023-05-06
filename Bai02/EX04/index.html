@@ -2,7 +2,88 @@
 <html>
 	<head>
 		<title>Nguyễn Hùng Web Design | Trang chủ</title>
-		<link rel="stylesheet" href="./style.css">
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+
+			.heading {
+				background-color:#242525;
+				display: flex;
+				height: 96px;
+				justify-content: space-between;
+			}
+
+			.heading__list {
+				list-style: none;
+				padding-left: 0;
+				display: flex;
+				order: 2;
+				margin: 0;
+			}
+
+			.heading__list-item {
+				margin: 0 12px;
+				cursor: pointer;
+			}
+
+			.heading__item-link {
+				color: #e5e5ff;
+				font-size: 18px;
+				transform: translateY(64px);
+				display: block;
+			}
+
+			.heading-h2 {
+				margin: 0;
+				color: #e5e5ff;
+				order: 1;
+				line-height: 96px;
+			}
+
+			.name-website {
+				color: #d36969;
+			}
+
+			.body-email {
+				display: flex;
+			}
+
+			.body-email input[type="text"] {
+				flex: 1;
+			}
+
+			.container-content {
+				display: none;
+			}
+
+			.active {
+				display: block;
+			}
+
+			.body__container-introduce {
+				display: block;
+			}
+
+			p {
+				font-size: 18px;
+			}
+
+			.footer {
+				height: 84px;
+				background-color: yellow;
+				display: flex;
+			}
+
+			.footer__parag {
+				margin: auto;
+			}
+
+			.enable {
+				color: yellow
+			}
+		</style>
 	</head>
 	<body>
 		<div class="heading">
@@ -125,8 +206,40 @@
 			<p class="footer__parag">Nguyen Hung Web Design, Copyright &copy; 2023</p>
 		</div>
 
-		<script src="./main.js">
+		<script>
+			const trangChu = document.querySelectorAll('.heading__item-link')
+			let content = document.querySelectorAll('.container-content')
 
+			for (let i = 0; i < trangChu.length; i++) {
+
+				trangChu[i].onclick = function(e) {
+					const active = document.querySelector('.active')
+					const enable = document.querySelector('.enable')
+
+					active.classList.remove('active')
+					enable.classList.remove('enable')
+
+					content[i].classList.add('active')
+					trangChu[i].classList.add('enable')
+
+					const introduceElement = document.querySelector('.body__container-introduce')
+					if(e.target.innerText === 'Trang chủ') {
+						document.title = 'Nguyễn Hùng Web Design | Trang chủ'
+
+						introduceElement.style.display = 'block'
+					} else {
+						introduceElement.style.display = 'none'
+					}
+
+					if(e.target.innerText === 'Thông tin') {
+						document.title = 'Nguyễn Hùng Web Design | Thông tin'
+					}
+
+					if(e.target.innerText === 'Dịch vụ') {
+						document.title = 'Nguyễn Hùng Web Design | Dịch vụ'
+					}
+				}
+			}
 		</script>
 	</body>
 </html>
