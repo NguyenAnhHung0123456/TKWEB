@@ -7,6 +7,105 @@
         <title>Document</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .heading {
+                background-color:#242525;
+                display: flex;
+                height: 96px;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .heading__list {
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                order: 2;
+            }
+
+            .heading__list-item {
+                margin: 0 12px;
+                cursor: pointer;
+            }
+
+            .heading__item-link {
+                color: #e5e5ff;
+                font-size: 18px;
+                display: block;
+            }
+
+            .heading-h2 {
+                margin: 0;
+                color: #e5e5ff;
+                order: 1;
+                line-height: 96px;
+            }
+
+            .name-website {
+                color: #d36969;
+            }
+
+            .body__container-introduce {
+                background: url(https://png.pngtree.com/background/20220730/original/pngtree-summer-sea-beach-top-coast-picture-image_1882194.jpg) no-repeat top center / cover;
+                height: 70vh;
+                display: block;
+                border-bottom: 4px solid red;
+            }
+
+            .body__container-introduce-content {
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .body-introduce__title {
+                margin: 0;
+                color: #ccc;
+                text-align: center;
+            }
+            .body-introduce__psg {
+                color: #ccc;
+                text-align: center;
+            }
+
+
+            .body-container-content {
+                margin: 0 64px;
+            }
+
+            .container-content {
+                display: none;
+            }
+
+            .active {
+                display: block;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .footer {
+                height: 84px;
+                background-color: #242525;
+                display: flex;
+                color: #ccc;
+            }
+            .footer__parag {
+                margin: auto;
+            }
+
+            .enable {
+                color: yellow
+            }
+        </style>
     </head>
     <body>
         <div class="heading">
@@ -137,8 +236,40 @@
             <p class="footer__parag">Nguyen Hung Web Design, Copyright &copy; 2023</p>
         </div>
 
-        <script src="./main.js">
+        <script>
+            const trangChu = document.querySelectorAll('.heading__item-link')
+            let content = document.querySelectorAll('.container-content')
 
+            for (let i = 0; i < trangChu.length; i++) {
+
+                trangChu[i].onclick = function(e) {
+                    const active = document.querySelector('.active')
+                    const enable = document.querySelector('.enable')
+
+                    active.classList.remove('active')
+                    enable.classList.remove('enable')
+
+                    content[i].classList.add('active')
+                    trangChu[i].classList.add('enable')
+
+                    const introduceElement = document.querySelector('.body__container-introduce')
+                    if(e.target.innerText === 'Trang chủ') {
+                        document.title = 'Nguyễn Hùng Web Design | Trang chủ'
+
+                        introduceElement.style.display = 'block'
+                    } else {
+                        introduceElement.style.display = 'none'
+                    }
+
+                    if(e.target.innerText === 'Thông tin') {
+                        document.title = 'Nguyễn Hùng Web Design | Thông tin'
+                    }
+
+                    if(e.target.innerText === 'Dịch vụ') {
+                        document.title = 'Nguyễn Hùng Web Design | Dịch vụ'
+                    }
+                }
+            }
         </script>
     </body>
 </html>
