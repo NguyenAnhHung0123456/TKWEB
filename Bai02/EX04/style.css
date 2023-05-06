@@ -6,6 +6,7 @@ body {
 .heading {
     background-color:#242525;
     display: flex;
+    height: 96px;
     justify-content: space-between;
 }
 
@@ -14,7 +15,7 @@ body {
     padding-left: 0;
     display: flex;
     order: 2;
-    align-items: center;
+    margin: 0;
 }
 
 .heading__list-item {
@@ -25,13 +26,19 @@ body {
 .heading__item-link {
     color: #e5e5ff;
     font-size: 18px;
+    transform: translateY(64px);
+    display: block;
 }
 
 .heading-h2 {
     margin: 0;
     color: #e5e5ff;
-    padding: 12px 0;
     order: 1;
+    line-height: 96px;
+}
+
+.name-website {
+    color: #d36969;
 }
 
 .body-email {
