@@ -53,6 +53,10 @@ body {
     display: none;
 }
 
+.body__container-introduce {
+    display: block;
+}
+
 p {
     font-size: 18px;
 }
