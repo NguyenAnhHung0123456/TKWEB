@@ -52,16 +52,16 @@ body {
     display: none;
 }
 
+.active {
+    display: block;
+}
+
 .body__container-introduce {
     display:block
 }
 
 p {
     font-size: 18px;
-}
-
-.active {
-    display: block;
 }
 
 .footer {
